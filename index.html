@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
        .nav-bar-landing {
             background-color: #FFFFFF;
@@ -11,8 +17,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-left: 180px;
-            padding-right: 184px;
+            padding: 20px 180px;
         }
         /* .vasiti-logo {
             margin-left: 70px;
@@ -36,7 +41,9 @@
             letter-spacing: 0.02em;
             text-align: center;
             color: #FFFFFF;
-
+            border-radius: 10px;
+            padding: 8px 16px;
+            border: none;
         }
         .container {
             margin-left: auto;
@@ -55,7 +62,7 @@
         .nav-group {
             display: flex;
             gap: 20px;
-            
+            align-items: center;
         }
         .nav {
             display: flex;
@@ -72,7 +79,15 @@
             margin-right: auto;
             gap: 30px;
        }
-        .section1,.section2 {
+       .section11 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 173px;
+            padding-right: 67px;
+            padding-top: 28px;
+        }
+        .section2 {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -100,8 +115,58 @@
             width: 50%;
         }
         .section2 {
-            background-image: url(Rectangle\ 17.png);
+            /* background-image: url(Rectangle\ 17.png); */
             gap: 100px;             
+        }
+        .my-section2{
+            background: #000;
+            padding-left: 126px;
+            padding-right: 126px;
+            /* padding-top: 126px;
+            padding-bottom: 100px; */
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            /* gap: 100px;  */
+            position: relative;
+        }
+        .one-1{
+            padding-left: 136px;
+        }
+        .container-index{
+            z-index: 1;
+            position: relative;
+            background: #fff;
+        }
+        .fl{
+            width: 25%;
+        }
+        .heading{
+            font-family: Inter;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 60px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #000000;
+        }
+        
+        .show-desk, .img-pos {display: inline-block;} 
+        .show-mob, .img-pos-mob{display: none;}
+        .qrt {
+            font-family: Inter;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 15.73px;
+            letter-spacing: 0.02em;
+            text-align: center;
+            padding: 7px 10px;
+            display: inline-block;
+            color: #FFFFFF;
+            border: 1px solid #FFFFFF66;
+            border-radius: 10px;
         }
         h2{
             font-family: Inter;
@@ -115,8 +180,10 @@
         .one {
             width: 50%;
         }
-        .one img{
-            width: 100%;
+        .img-pos{
+            width: 50%;
+            position: relative;
+            top: 60px;
         }
         .section2 p{
             font-family: Inter;
@@ -145,7 +212,7 @@
             letter-spacing: 0.2em;
             text-align: left;
             color: #fff;
-            border: 1px solid #FF5C00
+            /* border: 1px solid #FF5C00 */
         }
         .an {
             font-family: Inter;
@@ -156,7 +223,7 @@
             text-align: left;
         }
         
-        .qrt {
+        /* .qrt {
             font-family: Inter;
             font-size: 13px;
             font-weight: 500;
@@ -166,7 +233,7 @@
             color: #fff;
             border: 1px solid #FFFFFF66;
             width: 76px;
-        }
+        } */
         .ano{
             font-family: Inter;
             font-size: 16px;
@@ -174,7 +241,7 @@
             line-height: 32px;
             letter-spacing: 0.2em;
             text-align: left;
-            text-align: center;
+            /* text-align: center; */
 
         }
         .wtn{
@@ -185,6 +252,9 @@
             padding-right: 165px;
             box-sizing: border-box;
             padding-bottom: 75px;
+            column-gap: 118px;
+            row-gap: 56px;
+            flex-wrap: wrap;
         }
     
         .city{
@@ -259,18 +329,28 @@
             padding-right: 62px;
             padding-top:98px ;
         }
-        .five{
+        .five {
             display: flex;
-            background-image: url(main-banner.png);
+            /* background-image: url(main-banner.png); */
+            background: #25201D;
             justify-content: space-between;
-            margin-top: 75px;
-            padding-right: 169px;
-            padding-left: 165px;
+            /* margin-top: 75px; */
+            padding: 0 169px;
+            /* padding-left: 165px; */
+            position: relative;
+        }
+        .phone-pos {
+            position: absolute;
+            bottom: -24px;
+            z-index: 1;
         }
        
-        .wh{
-            margin-left:500px;
-            padding-bottom: 40px;
+        .wh {
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: 50%;
+            padding: 80px 0;
         }
         
         .chi{
@@ -298,30 +378,17 @@
             letter-spacing: -0.03em;
             text-align: left;
             color: #FFFFFF;
-            padding-top: 40px;
-            width: 452px;
-            height: 80px;
-            top: 5111px;
-            left: 819px;
-            gap: 0px;
-            opacity: 0px;
         }
        
         .sub{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 368px;
-            width: Hug (119px)px;
-            height: Fixed (42px)px;
-            top: 5283px;
-            left: 1063px;
-            padding: 8px 24px 8px 24px;
-            gap: 10px;
-            border-radius: 4px 0px 0px 0px;
-            opacity: 0px;
+            padding: 8px 24px;
+            border-radius: 4px;
+            background-color: #514d4a;
             /* box-shadow: 1px 4px 8px 0px #EF580333; */
-            background-image: url(search-bar.png);
+            /* background-image: url(search-bar.png); */
         }
         
         .email{
@@ -335,14 +402,8 @@
             border: none;
         }
         .bt{
-            width: Hug (119px)px;
-            height: Fixed (42px)px;
-            top: 5283px;
-            left: 1063px;
-            padding: 8px 24px 8px 24px;
-            gap: 10px;
-            border-radius: 4px 0px 0px 0px;
-            opacity: 0px;
+            padding: 8px 24px;
+            border-radius: 4px;
             background-color: #FFFFFF;
             font-family: Roboto;
             font-size: 13px;
@@ -351,14 +412,17 @@
             letter-spacing: 0.02em;
             text-align: center;
             color: #242120;
+            border: none;
         }
         .phone{
-            position: absolute;
-            top: 3968px;
-            padding-left: 0;
+            /* position: absolute; */
+            /* top: 3968px; */
+            /* padding-left: 0; */
         }
         .last{
-            background-image: url(Rectangle\ 56.png);
+            z-index: 2;
+            position: relative;
+            background: #25201D;
             display: flex;
             justify-content: space-between;
             padding-left: 139px;
@@ -402,16 +466,22 @@
                 padding-left: 32px;
                 padding-right: 209px;
             }
-            .nav-bar-landing{
-               padding: 0;
+            .nav-bar-landing {
+                padding: 47px 0 76px 32px;
+                display: block;
             }
+            .heading {
+                font-size: 32px;
+                line-height: 40px;
+            }
+            .hide-mobile{display: none;}
             .section1, .section2 {
                 display: block;
                 padding: 0px;
                 margin: 0;
                
             }
-            h1{
+            /* h1{
                 font-family: Inter;
                 font-size: 32px;
                 font-weight: 700;
@@ -421,7 +491,7 @@
                 color: #000;
                 padding-left: 32px;
                 padding-right: 5px;
-            }
+            } */
             p {
                 font-family: Inter;
                 font-size: 18px;
@@ -430,24 +500,60 @@
                 letter-spacing: 0.02em;
                 text-align: left;
                 color: #494949;
-                padding-left: 32px;
+                /* padding-left: 32px; */
             }
             .one {
-                padding: 0;
                 width: 100%;
+            }
+            .one-1 {
+                padding: 104px 57px 78px 62px;
             }
             .one img {
                 width: 100%;
+            }
+            section.container.section11 {
+                padding: 0;
+                display: block;
             } 
-            .container {
+            .text-block{padding: 0 59px 0 32px;}
+            section.container.section11 img {
+                width: 100%;
+            }
+            .show-desk{display: none;} 
+            .show-mob{display: inline-block;} 
+            .img-pos{display: none;} 
+            .img-pos-mob{display: inline-block;width: 100%;} 
+            .my-section2 {
+                padding: 0;
+                flex-direction: column-reverse;
+            }
+            .fl {
+                width: 100%;
+            }
+            .phone-pos {
+                position: static;
+            }
+            .five {
+                flex-direction: column-reverse;
+                padding: 0 16px;
+            }
+            .last {
+                padding: 86px 16px;
+                flex-wrap: wrap;
+                gap: 24px;
+            }
+            .snr {
+                width: 46%;
+            }
+            /* .container {
                 max-width: 414px;
                 margin-left: auto;
                 margin-right: auto;
-            }
+            } */
             h2 {
-                padding: 104px 132px 0px 62px;
+                /* padding: 104px 132px 0px 62px;
                 width: 220px;
-                height: 29px;
+                height: 29px; */
                 font-size: 20px;
             }
             .two {
@@ -459,20 +565,10 @@
                 font-weight: 400;
                 line-height: 24px;
                 letter-spacing: 0.02em;
-                text-align: left;
+                /* text-align: left;
                 padding-left: 30px;
                 padding-right: 27px;
-                box-sizing: border-box;
-            }
-            .qrt {
-                font-family: Inter;
-                font-size: 13px;
-                font-weight: 500;
-                line-height: 15.73px;
-                letter-spacing: 0.02em;
-                text-align: left;
-                width: 76px;
-                padding: 0px 0px 10px 62px;
+                box-sizing: border-box; */
             }
             .ano {
                 font-family: Inter;
@@ -567,9 +663,9 @@
                 width: 295px;
                 height: 10.2px;
             } */
-            .five {
+            /* .five {
                 display: block;
-            }
+            } */
             .phone{
                 position: absolute;
                 top: 10700px;
@@ -581,12 +677,10 @@
                 width: 100%;
             }
             .wh {
-                margin: 0%;
-                padding-top: 71px;
-                padding-left: 16px;
-                padding-right: 17px;
+                padding: 71px 0;
+                position: static;
             }
-            .head {
+            /* .head {
                 font-family: Inter;
                 font-size: 40px;
                 font-weight: 700;
@@ -594,7 +688,7 @@
                 letter-spacing: -0.03em;
                 text-align: left;
                 width: 310px;
-            }
+            } */
             .chi {
                 font-family: Roboto;
                 font-size: 14px;
@@ -618,19 +712,19 @@
                 letter-spacing: 0.02em;
                 text-align: center;
             }
-            .five {
+            /* .five {
                 padding: 0;
-            }
+            } */
             .sub {
                 width: 380.78px;
                 padding: 0;
                 justify-content: start;
                 width: 200px;
             }
-            .last {
+            /* .last {
                 display: block;
                 padding: 0;
-            }
+            } */
             .df{
                 display: flex;
                 justify-content: space-between;
@@ -679,7 +773,7 @@
             <button class="signup">SIGN UP</button>
         </div>
     </div>
-    <div class=" container nav-bar-landing">
+    <div class=" container nav-bar-landing hide-mobile">
         <div class="sub-nav">
             <div class="nav-link">MARKETPLACE</div>
             <div class="nav-link">WHOLESALE CENTER</div>
@@ -689,181 +783,169 @@
             <div class="nav-link">EVENTS</div>
         </div>
     </div>
-    <section class="container">
-        <div class="section1">
-            <div class="one">
-                <h1>    Amazing
-                    Experiences from Our Wonderful Customers
-                </h1>
-                <p>
-                    Here is what customers and vendors are saying about us,
-                    you can share your stories with us too.
-                </p>
+    <section class="container section11">
+        <div class="text-block">
+            <h1 class="heading">    Amazing
+                Experiences from Our Wonderful Customers
+            </h1>
+            <p>
+                Here is what customers and vendors are saying about us,
+                you can share your stories with us too.
+            </p>
+        </div>
+        <img class="show-desk" src="Group 81.png" alt="">
+        <img class="show-mob" src="Group81.png" alt="">
+    </section>
+    <div class="container my-section2">
+        <img class="img-pos" src="Group 89.png" alt="">
+        <img class="img-pos-mob" src="black-beautiful-ladies-smiling 1 (1).png" alt="">
+        <div class="one one-1">
+            <h2>   Tolu & Joy’s Experience
+            </h2>
+            <div class="qrt">
+                CUSTOMER
             </div>
-            <div class="one">
-            <img src="Group 81.png" alt="">
+            <p class="two">
+                I had the best experience shopping with vasiti. 
+                Usability of the website was great, very good customer service,
+                an all round great experience. 
+                I would definately be coming back! I had the best experience shopping with vasiti. 
+                Usability of the website was great, very good customer service,
+                an all round great experience. I would definately be coming back!
+            </p>
+            <div class="ano">
+                <div>Share your own story!</div>
+                <!-- <div class="pix"> -->
+                    <img src="Vector 5.png" alt="">
+                <!-- </div> -->
             </div>
         </div>
-    </section>
-    <div class="container">
-        <section class="section2">
-            <div class="one">
-                <img src="Group 89.png" alt="">
-                </div>
-            <div class="one">
-                <h2>   Tolu & Joy’s Experience
-                </h2>
-                <br>
-                <div class="qrt">
-                 CUSTOMER
-                </div>
-                <p class="two">
-                    I had the best experience shopping with vasiti. 
-                    Usability of the website was great, very good customer service,
-                    an all round great experience. 
-                    I would definately be coming back! I had the best experience shopping with vasiti. 
-                    Usability of the website was great, very good customer service,
-                    an all round great experience. I would definately be coming back!
-                </p>
-                <div class="ano">
-                    Share your own story!
-                    <div class="pix"><img src="Vector 5.png" alt=""></div>
-                </div>
-            </div>
-        </section>
     </div>
-    <div class="container">
-        <section class="wtn">
-            <div class="fl">
-                <div>
-                    <img src="Ellipse 22.png">
-                </div>
-                <div class="name">
-                    Joseph Ike
-                </div>
-                <div class="location">
-                    <div class="city">In Ikeja</div>
-                    <div><img src="TAG.png" alt=""></div>
-                </div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt
-                    mollit dolore cillum minim tempor enim. 
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut 
-                    voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis
-                    ea quis id quis ad et. Sunt qui esse pariatur duis deserunt 
-                    mollit dolore cillum minim tempor enim.
-                </div>
+    <div class="container container-index wtn">
+        <div class="fl">
+            <div>
+                <img src="Ellipse 22.png">
             </div>
-            <div class="fl">
-                <div>
-                    <img src="Ellipse 23.png">
-                </div>
-                <div class="name">
-                    Adetola Fashina
-                </div>
-                <div class="location">
-                    <div class="city"> Ibadan</div>
-                    <div><img src="TAG.png" alt=""></div>
-                </div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deser
-                    unt ut voluptate aute id deserunt nisi.
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                    Velit officia consequat duis enim velit mollit.
-                    Exercitation veniam consequat sunt nostrud amet.
-                </div>
-            </div> 
-            <div class="fl">
-                <div>
-                    <img src="Ellipse 24.png">
-                </div>
-                <div class="name">
-                    Emmanuel Fayemi
-                </div>
-                <div class="location">
-                    <div class="city">In Akoko</div>
-                    <div><img src="TAG.png" alt=""></div>
-                </div>
-                <div class="note">
-                        Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
-                        Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
-                        Elit aute irure tempor cupidatat incididunt 
-                        sint deserunt ut voluptate aute id deserunt nisi.
-                        Elit aute irure tempor cupidatat incididunt 
-                        deser unt ut voluptate aute id deserunt nisi.
-                        Amet minim mollit non deserunt ullamco est sit 
-                        aliqua dolor do amet sint.
-                </div>
+            <div class="name">
+                Joseph Ike
             </div>
-        </section>
-    </div>
-    <div class="container">
-        <section class="wtn">
-            <div class="fl">
-                <div>
-                    <img src="d.png">
-                </div>
-                <div class="name">
-                    Chisom Obilor
-                </div>
-                <div class="location">
-                    <div class="city">In Magado</div>
-                    <div><img src="t.png" alt=""></div>
-                </div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                </div>
+            <div class="location">
+                <div class="city">In Ikeja</div>
+                <div><img src="TAG.png" alt=""></div>
             </div>
-            <div class="fl">
-                <div>
-                    <img src="Ellipse 23 (1).png">
-                </div>
-                <div class="name">
-                    Adunoluwa Adeyemi
-                </div>
-                <div class="location">
-                    <div class="city"> Iwo Road</div>
-                    <div><img src="t.png" alt=""></div>
-                </div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deser
-                    unt ut voluptate aute id deserunt nisi.
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                    Velit officia consequat duis enim velit mollit.
-                    Exercitation veniam consequat sunt nostrud amet.
-                </div>
-                
-            </div> 
-            <div class="fl">
-                <div>
-                    <img src="Ellipse 24 (1).png">
-                </div>
-                <div class="name">
-                Chidi Okeke
-                </div>
-                <div class="location">
-                    <div class="city">In Somolu</div>
-                    <div><img src="t.png" alt=""></div>
-                </div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
-                    Elit aute irure tempor cupidatat incididunt sint deser unt ut voluptate aute id deserunt nisi. 
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                </div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                Sunt qui esse pariatur duis deserunt
+                mollit dolore cillum minim tempor enim. 
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut 
+                voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis
+                ea quis id quis ad et. Sunt qui esse pariatur duis deserunt 
+                mollit dolore cillum minim tempor enim.
             </div>
-
-        </section>
+        </div>
+        <div class="fl">
+            <div>
+                <img src="Ellipse 23.png">
+            </div>
+            <div class="name">
+                Adetola Fashina
+            </div>
+            <div class="location">
+                <div class="city"> Ibadan</div>
+                <div><img src="TAG.png" alt=""></div>
+            </div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                Elit aute irure tempor cupidatat incididunt sint deser
+                unt ut voluptate aute id deserunt nisi.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+            </div>
+        </div> 
+        <div class="fl">
+            <div>
+                <img src="Ellipse 24.png">
+            </div>
+            <div class="name">
+                Emmanuel Fayemi
+            </div>
+            <div class="location">
+                <div class="city">In Akoko</div>
+                <div><img src="TAG.png" alt=""></div>
+            </div>
+            <div class="note">
+                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                    Elit aute irure tempor cupidatat incididunt 
+                    sint deserunt ut voluptate aute id deserunt nisi.
+                    Elit aute irure tempor cupidatat incididunt 
+                    deser unt ut voluptate aute id deserunt nisi.
+                    Amet minim mollit non deserunt ullamco est sit 
+                    aliqua dolor do amet sint.
+            </div>
+        </div>
+        <div class="fl">
+            <div>
+                <img src="d.png">
+            </div>
+            <div class="name">
+                Chisom Obilor
+            </div>
+            <div class="location">
+                <div class="city">In Magado</div>
+                <div><img src="t.png" alt=""></div>
+            </div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+            </div>
+        </div>
+        <div class="fl">
+            <div>
+                <img src="Ellipse 23 (1).png">
+            </div>
+            <div class="name">
+                Adunoluwa Adeyemi
+            </div>
+            <div class="location">
+                <div class="city"> Iwo Road</div>
+                <div><img src="t.png" alt=""></div>
+            </div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                Elit aute irure tempor cupidatat incididunt sint deser
+                unt ut voluptate aute id deserunt nisi.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+            </div>
+            
+        </div> 
+        <div class="fl">
+            <div>
+                <img src="Ellipse 24 (1).png">
+            </div>
+            <div class="name">
+            Chidi Okeke
+            </div>
+            <div class="location">
+                <div class="city">In Somolu</div>
+                <div><img src="t.png" alt=""></div>
+            </div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                Elit aute irure tempor cupidatat incididunt sint deser unt ut voluptate aute id deserunt nisi. 
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            </div>
+        </div>
     </div>
     <div class="container">
         <section class="section4">
@@ -895,121 +977,113 @@
             
         </section>
     </div>
-    <div class="container">
-        <section class="wtn">
-            <div class="fl">
-                <div>
-                    <img src="e1.png">
-                </div>
-                <div class="name">
-                    Temi Obadofin
-                </div>
-                <div><img src="t.png" alt=""></div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                </div>
+    <div class="container container-index wtn">
+        <div class="fl">
+            <div>
+                <img src="e1.png">
             </div>
-            <div class="fl">
-                <div>
-                    <img src="e2.png">
-                </div>
-                <div class="name">
-                    Promise Ejiofor
-                </div>
-                <div><img src="t.png" alt=""></div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
-                    Elit aute irure tempor cupidatat incididunt sint deser
-                    unt ut voluptate aute id deserunt nisi.
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                    Velit officia consequat duis enim velit mollit.
-                    Exercitation veniam consequat sunt nostrud amet.
-                </div>
-            </div> 
-            <div class="fl">
-                <div>
-                    <img src="e3.png">
-                </div>
-                <div class="name">
-                    Feyisola Arinola
-                </div>
-                <div><img src="t.png" alt=""></div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
-                    Elit aute irure tempor cupidatat incididunt sint deser unt ut voluptate aute id deserunt nisi. 
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                </div>
+            <div class="name">
+                Temi Obadofin
             </div>
-        </section>
+            <div><img src="t.png" alt=""></div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+            </div>
+        </div>
+        <div class="fl">
+            <div>
+                <img src="e2.png">
+            </div>
+            <div class="name">
+                Promise Ejiofor
+            </div>
+            <div><img src="t.png" alt=""></div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                Elit aute irure tempor cupidatat incididunt sint deser
+                unt ut voluptate aute id deserunt nisi.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+            </div>
+        </div> 
+        <div class="fl">
+            <div>
+                <img src="e3.png">
+            </div>
+            <div class="name">
+                Feyisola Arinola
+            </div>
+            <div><img src="t.png" alt=""></div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                Elit aute irure tempor cupidatat incididunt sint deser unt ut voluptate aute id deserunt nisi. 
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            </div>
+        </div>
+        <div class="fl">
+            <div>
+                <img src="e4.png">
+            </div>
+            <div class="name">
+                Karen Ibeh
+            </div>
+            <div><img src="t.png" alt=""></div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+            </div>
+        </div>
+        <div class="fl">
+            <div>
+                <img src="e5.png">
+            </div>
+            <div class="name">
+                Oluchi Uzo
+            </div>
+            <div><img src="t.png" alt=""></div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
+                Elit aute irure tempor cupidatat incididunt sint deser
+                unt ut voluptate aute id deserunt nisi.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
+                Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+            </div>
+        </div> 
+        <div class="fl">
+            <div>
+                <img src="e6.png">
+            </div>
+            <div class="name">
+                Amos Okafor
+            </div>
+            <div><img src="t.png" alt=""></div>
+            <div class="note">
+                Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
+                Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
+                Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
+                Elit aute irure tempor cupidatat incididunt sint deser unt ut voluptate aute id deserunt nisi. 
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            </div>
+        </div>
     </div>
     <div class="container">
-        <section class="wtn">
-            <div class="fl">
-                <div>
-                    <img src="e4.png">
-                </div>
-                <div class="name">
-                    Karen Ibeh
-                </div>
-                <div><img src="t.png" alt=""></div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                </div>
-            </div>
-            <div class="fl">
-                <div>
-                    <img src="e5.png">
-                </div>
-                <div class="name">
-                    Oluchi Uzo
-                </div>
-                <div><img src="t.png" alt=""></div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et.
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. 
-                    Elit aute irure tempor cupidatat incididunt sint deser
-                    unt ut voluptate aute id deserunt nisi.
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-                    Velit officia consequat duis enim velit mollit.
-                    Exercitation veniam consequat sunt nostrud amet.
-                </div>
-            </div> 
-            <div class="fl">
-                <div>
-                    <img src="e6.png">
-                </div>
-                <div class="name">
-                    Amos Okafor
-                </div>
-                <div><img src="t.png" alt=""></div>
-                <div class="note">
-                    Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. 
-                    Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.
-                    Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. 
-                    Elit aute irure tempor cupidatat incididunt sint deser unt ut voluptate aute id deserunt nisi. 
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                </div>
-            </div>
-        </section>
-    </div>
-    <div class="container">
-       <div class="five">
-            <div class="phone three">
-                <img src="subscribe-banner 1.png" alt="">
-            </div>
-            <div class="fix">            
+        <div class="five">
+            <img class="phone-pos" src="subscribe-banner 1.png" alt="">
             <div class="wh">
+                <div>
                     <div class="head">
                         Be a  member
                         of our community 🎉
@@ -1017,54 +1091,48 @@
                     <div class="chi">We’d make sure you’re always first to know what’s 
                         happening on Vasiti—thus, the world.
                     </div>
-                    <div class="sub">
-                        <div><input class="email" type="email " value="enter email"></div>
-                        <div><button class="bt">subscribe</button></div>
-                    </div>
+                    <form class="sub">
+                        <input class="email" type="email " placeholder="enter email">
+                        <button type="submit" class="bt">subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="last">
-            <div class="df">
-                <div class="snr ty">
-                    <div class="tail">Company</div>
-                    <h4>About Us</h4>
-                    <h4>Term of Use</h4>
-                    <h4>Privacy Policy</h4>
-                    <h4>Press and Media</h4>
-                </div>
-                <div class="snr">
-                    <div class="tail">Product</div>
-                    <h4>Marketplace</h4>
-                    <h4>Magazine</h4>
-                    <h4>saller</h4>
-                    <h4>Wholesale</h4>
-                    <h4>Services</h4>
-                </div>
-            </div>
-            <div class="df">
-                <div class="snr">
-                    <div class="tail">Careers</div>
-                    <h4>Become a Vasiti Influencer</h4>
-                    <h4>Become a Campus writer</h4>
-                    <h4>Become a Campus Rep</h4>
-                    <h4>Become an Affiliate</h4>
-                </div>
-                <div class="snr">
-                    <div class="tail">Get in touch</div>
-                    <h4>Contact us</h4>
-                    <h4>Patner with us</h4>
-                    <h4>Advertise with us</h4>
-                    <h4>Help/FAQs</h4>
-                </div>
-            </div>
-            <div class="snr tr">
-                <div class="tail">Join our community</div>
-                <img src="sm-icons.png" alt="">
-                <h4>Email Newsletter</h4>
-            </div>
+    <div class="container last">
+        <div class="snr">
+            <div class="tail">Company</div>
+            <h4>About Us</h4>
+            <h4>Term of Use</h4>
+            <h4>Privacy Policy</h4>
+            <h4>Press and Media</h4>
+        </div>
+        <div class="snr">
+            <div class="tail">Product</div>
+            <h4>Marketplace</h4>
+            <h4>Magazine</h4>
+            <h4>saller</h4>
+            <h4>Wholesale</h4>
+            <h4>Services</h4>
+        </div>
+        <div class="snr">
+            <div class="tail">Careers</div>
+            <h4>Become a Vasiti Influencer</h4>
+            <h4>Become a Campus writer</h4>
+            <h4>Become a Campus Rep</h4>
+            <h4>Become an Affiliate</h4>
+        </div>
+        <div class="snr">
+            <div class="tail">Get in touch</div>
+            <h4>Contact us</h4>
+            <h4>Patner with us</h4>
+            <h4>Advertise with us</h4>
+            <h4>Help/FAQs</h4>
+        </div>
+        <div class="snr">
+            <div class="tail">Join our community</div>
+            <img src="sm-icons.png" alt="">
+            <h4>Email Newsletter</h4>
         </div>
     </div>    
 </body>
